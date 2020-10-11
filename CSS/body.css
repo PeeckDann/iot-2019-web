@@ -1,0 +1,38 @@
+body{
+    background: #fff;
+    font-family: "Rubik", "Arial", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    color: #0B132A;
+}
+
+.paragraph{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+@media (max-width: 769px){
+    .paragraph{
+        text-align: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #4F5665;
+    }
+
+    .title{
+        text-align: center;
+        font-size: 28px;
+        line-height: 40px;
+    }
+}

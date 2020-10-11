@@ -1,0 +1,136 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 79%;
+    margin-left: 10%;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 26px;
+    line-height: 40px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #F53855;
+}
+#toggle {
+    display: none;
+}
+
+.top_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.logo_text{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.header_nav{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_nav_item a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-right: 40px;
+    color: #4F5665;
+}
+
+.registration a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    margin-right: 30px;
+    color: #0B132A;
+}
+
+.registration button{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid #F53855;
+    border-radius: 50px;
+    padding: 10px 42px;
+    color: #F53855;
+    background: #fff;
+    cursor: pointer;
+}
+
+.registration button:hover{
+    background: #F53855;
+    color: #fff;
+}
+
+@media (max-width: 1120px){
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        margin-right: 80%;
+    }
+
+    .top_logo{
+        display: none;
+    }
+
+    .header_nav{
+        width: 100%;
+        display: none;
+        margin: 20px 0;
+    }
+
+    .header_nav_item{
+        margin-bottom: 5px;
+    }
+
+    .registration{
+        display: none;
+    }
+
+    .registration a{
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .registration button{
+        padding: 5px 40px;
+    }
+
+    #toggle:checked ~ .top_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #toggle:checked ~ .header_nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #toggle:checked ~ .registration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
