@@ -1,0 +1,161 @@
+.feedback_container{
+    width: 79%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.feedback_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_top{
+    width: 42.7%;
+}
+
+.feedback_title h2{
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.feedback_paragraph p{
+    text-align: center;
+}
+
+.feedback_bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.first_review{
+    position: relative;
+    width: 30%;
+    height: 220px;
+    background: #FFFFFF;
+    border: 2px solid #F53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.first_review_background{
+    margin-top: -340px;
+    margin-left: -70%;
+}
+
+.review{
+    width: 30%;
+    height: 220px;
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.top_part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: -32px;
+}
+
+.name{
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 25px;
+    margin-bottom: -20px;
+    color: #0B132A;
+}
+
+.location{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: #4F5665;
+}
+
+.score{
+    width: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review_text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: #0B132A;
+    margin: 4% 8%;
+}
+
+@media (max-width: 768px){
+    .feedback_container{
+        width: 100%;
+        margin-top: 70px;
+        margin-left: 0;
+    }
+
+    .feedback_top{
+        width: 100%;
+    }
+
+    .feedback_title h2{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .feedback_bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .first_review{
+        width: 90%;
+    }
+
+    .first_review_background{
+        margin-top: -400px;
+        margin-left: 0;
+        opacity: 0;
+        width: 320px;
+    }
+
+    .review{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .info{
+        margin-left: -18px;
+    }
+
+    .name{
+        font-size: 14px; 
+    }
+    
+    .location{
+        font-size: 10px;
+    }
+
+    .review_text{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
