@@ -64,6 +64,8 @@ label {
     color: #F53855;
     background: #fff;
     cursor: pointer;
+    transition-property: background, color;
+    transition-duration: 0.5s;
 }
 
 .registration button:hover{
@@ -71,7 +73,7 @@ label {
     color: #fff;
 }
 
-@media (max-width: 1120px){
+@media (max-width: 426px){
     .header_container{
         display: flex;
         flex-direction: column;

@@ -101,7 +101,7 @@
     margin: 4% 8%;
 }
 
-@media (max-width: 768px){
+@media (max-width: 426px){
     .feedback_container{
         width: 100%;
         margin-top: 70px;

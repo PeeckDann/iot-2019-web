@@ -30,7 +30,7 @@
     color: #4F5665;
 }
 
-@media (max-width: 768px){
+@media (max-width: 426px){
     .features_container{
         width: 100%;
         height: 750px;
@@ -50,7 +50,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 10%;
     }
 
     .features_list{
