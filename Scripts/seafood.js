@@ -23,6 +23,6 @@ const seafoodTemplate = ({id, name, description}) =>
  </div>`
 
 export const addSeafood = ({id, name, description}) => {
-    var seafoodContainer = document.getElementById('main-section__products');
+    let seafoodContainer = document.getElementById('main-section__products');
     seafoodContainer.insertAdjacentHTML('beforeend', seafoodTemplate({id, name, description}));
 }
