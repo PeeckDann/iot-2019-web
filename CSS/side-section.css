@@ -1,0 +1,94 @@
+.side-section-cotainer{
+    width: 345px;
+    height: 700px;
+    border-right: solid 3px  rgb(221, 217, 217);
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.manage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-bottom: solid 2px rgb(221, 217, 217);
+    padding-bottom: 8px;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 28px;
+    color: #4F5665;
+}
+
+.sort{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.sort > .text{
+    width: 60%;
+}
+
+.sort-button{
+    height: 20px;
+    width: 50px;
+    border: solid 1px rgb(44, 107, 241);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sort-button.active{
+    background-color: rgb(217, 229, 255);
+}
+
+.sort-button--element{
+    position: relative;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: rgb(44, 107, 241);
+    right: 7px;
+}
+
+.sort-button--element.active{
+    left: 23px
+}
+
+.expenses{
+    width: 81%;
+}
+
+.count-button{
+    padding: 5px 50px;
+    color: white;
+    border: solid 1px rgb(44, 107, 241);
+    border-radius: 5px;
+    background-color: rgb(44, 107, 241);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 28% 10px;
+    cursor: pointer;
+}
+
+.count-button:hover{
+    background-color: rgb(0, 64, 201);
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-price{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 20px; 
+}
