@@ -7,27 +7,28 @@ const clearButton = document.getElementById('clear-button');
 
 const sortButton = document.getElementById('sort-button');
 const countButton = document.getElementById('count-button');
-const addButton = document.getElementById('temp-add-btn');
 
-let seafoodList= [];
-let idCounter = 1;
+const createButton = document.getElementById('temp-add-btn');
 
-addButton.addEventListener('click', (event) => {
+let seafoodList = [];
+let idCounter = 0;
+
+createButton.addEventListener('click', (event) => {
     event.preventDefault();
 
     let id = idCounter;
     idCounter += 1;
 
-    let name = `Seafood #${id}`;
-    let description = 'This is some Seafood';
+    let description = 'Description';
     let price = Math.floor(Math.random() * 1999);
+    let name = `Seafood ${price}$`;
 
     let seafood = new Seafood(id, name, description, price);
 
     seafoodList.push(seafood);
 
-    addSeafood({id, name, description})
-    })
+    addSeafood({id, name, description});
+})
 
 countButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -48,7 +49,6 @@ sortButton.addEventListener('click', (event) => {
     document.getElementById('sort-button--element').classList.toggle('active');
 
     seafoodList.sort((a, b) => b.getPrice() - a.getPrice());
-
     update(seafoodList);
 })
 

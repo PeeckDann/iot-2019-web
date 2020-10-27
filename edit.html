@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="CSS/crud-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Edit Page</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <h1 class="header__shop-name">My Shop</h1>
+
+            <nav class="header__navigation">
+                <a class="header__navigation--my-seafood" href="index.html">My Seafood</a>
+                <a class="header__navigation--create-seafood" href="create.html">Create Seafood</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="crud">
+        <div class="crud-container">
+            <form class="crud-form" id="crud-form" action="">
+                <h1 class="crud-title">Edit Seafood</h1>
+
+                <div class="modal-content" id="modal-content">
+                    <div class="modal-body" id="modal-body">
+                        <p class="modal-text" id="modal-text">Enter all values!</p>
+                        <span class="close" id="close">&times;</span>
+                    </div>
+                </div>
+
+                <label for="name-input">Name</label>
+                <input type="text" name="name-input" id="name-input" placeholder="Enter name...">
+
+                <label for="description-input">Description</label>
+                <textarea name="description-input" id="description-input" cols="30" rows="3" placeholder="Enter description..."></textarea>
+                
+                <label for="prices">Price</label>
+                <input type="number" name="price-input" id="price-input" placeholder="Enter price...">
+
+                <button class="edit-button" id="edit-button">Edit</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="module" src="Scripts/edit.js"></script>
+
+</body>
+</html>

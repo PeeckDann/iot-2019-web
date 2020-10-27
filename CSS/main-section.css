@@ -26,7 +26,8 @@
 }
 
 .main-section__products--product img{
-    width: 250px;
+    width: 230px;
+    margin: auto;
 }
 
 .product-name{
@@ -57,6 +58,11 @@
     color: #fff;
     padding: 5px 40px;
     margin-right: 10px;
+    font-size: 14px;
+}
+
+.product-buttons--edit:hover{
+    background-color: rgb(0, 64, 201);
 }
 
 .product-buttons--remove{
