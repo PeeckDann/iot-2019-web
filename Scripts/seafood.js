@@ -17,8 +17,8 @@ const seafoodTemplate = ({id, name, description}) =>
      <h2 class="product-name">${name}</h2>
      <p class='product-description'>${description}</p>
      <div class='product-buttons'>
-         <a href="edit.html" class="product-buttons--edit" id="edit-button">Edit</a>
-         <button class="product-buttons--remove" id="remove-button">Remove</button>
+         <a href="edit.html?id=${id}" class="product-buttons--edit" id="edit-button">Edit</a>
+         <a href="delete.html?id=${id}" class="product-buttons--remove" id="remove-button">Remove</a>
      </div>
  </div>`
 

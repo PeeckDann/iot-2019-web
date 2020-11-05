@@ -97,3 +97,20 @@
     color: white;
     cursor: pointer;
 }
+
+.delete-confirmation{
+    padding: 50px 150px;
+    background-color: rgb(230, 48, 48);
+    border: solid 1px rgb(230, 48, 48);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 500px;
+}
+
+.delete-confirmation:hover{
+    background-color: rgb(208, 7, 7);
+}

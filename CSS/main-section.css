@@ -72,4 +72,9 @@
     color: #fff;
     padding: 5px 27px;
     margin-right: 10px;
+    font-size: 14px;
+}
+
+.product-buttons--remove:hover{
+    background-color: rgb(208, 7, 7);
 }

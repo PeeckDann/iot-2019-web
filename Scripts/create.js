@@ -1,15 +1,26 @@
-const create = document.getElementById('create-button');
-const close = document.getElementById('close')
-const error = document.getElementById('modal-content')
+import {
+    postSeafood
+} from './crud.js'
 
-create.addEventListener('click', (event) => {
-    if (document.getElementById('name-input').value == '' || document.getElementById('description-input').value == '' || document.getElementById('price-input').value == ''){
-        event.preventDefault();
+const createButton = document.getElementById('create-button');
+const closeModal = document.getElementById('close-modal');
+const error = document.getElementById('modal-content');
+
+createButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    let name = document.getElementById('name-input').value;
+    let description = document.getElementById('description-input').value;
+    let price = document.getElementById('price-input').value;
+
+    if (name == '' || description == '' || price == ''){
         error.style.display = 'block';
     }
+
+    postSeafood({name, description, price});
 })
 
-close.addEventListener('click', (event) => {
+closeModal.addEventListener('click', (event) => {
     event.preventDefault();
 
     error.style.display = 'none';
